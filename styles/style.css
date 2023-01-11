@@ -1,0 +1,254 @@
+body {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header li {
+    z-index: 99;
+}
+
+header #toggle-btn {
+    z-index: 9999;
+}
+
+#__next {
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 1.9rem;
+}
+
+.thumb-nail {
+    box-shadow: 0px 0px 12px 3px black;
+}
+
+.logo-brand {
+    animation: rotateAni 2s linear infinite;
+}
+
+.mint-item {
+    box-shadow: 1px 1px 10px 0px #b5b5b5;
+    padding: 30px;
+}
+
+.team {
+    box-shadow: 1px 1px 10px 0px #b5b5b5;
+}
+
+.team img {
+    aspect-ratio: 0.8/1;
+}
+
+.capitalize-first-letter {
+    text-transform: lowercase;
+}
+
+.capitalize-first-letter:first-letter {
+    text-transform: uppercase;
+}
+
+.info-video {
+    position: relative;
+    top: -13rem;
+    margin-bottom: -13rem;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.info-first-text {
+    position: absolute;
+    top: 40rem;
+    right: 8rem;
+}
+
+.driver-section {
+    position: relative;
+    top: -16rem;
+    margin-bottom: -15rem;
+}
+
+.driver-section.whitepaper {
+    top: -28rem;
+    margin-bottom: -25rem;
+}
+
+.driver {
+    display: inline-block;
+    position: relative;
+}
+
+.driver.left {
+    left: -120%;
+    animation: driving-left 15s linear infinite;
+}
+
+.driver.right {
+    right: -120%;
+    animation: driving-right 15s linear infinite;
+}
+
+.driver.white-paper-driver {
+    /* animation: driving 10s linear infinite; */
+    top: 60px;
+}
+
+.white-paper-driver img {
+    width: 425px;
+}
+
+.first-gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 680px;
+    width: 650px;
+    max-width: 100%;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px black;
+}
+
+@keyframes driving-left {
+    0% {
+        left: -120%;
+    }
+
+    50% {
+        left: 130%;
+    }
+
+    100% {
+        left: 130%;
+    }
+}
+
+@keyframes driving-right {
+    0% {
+        right: -120%;
+    }
+
+    50% {
+        right: -120%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes driving {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes rotateAni {
+    0% {
+        -webkit-transform: translateX(-1px) rotateY(360deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(-1px) rotateY(180deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1px) rotateY(0deg);
+    }
+}
+
+@media (min-width: 998px) {
+    .first-gif {
+        right: 27%;
+    }
+}
+
+@media (max-width: 1540px) {
+    .driver-section.whitepaper {
+        top: -16rem;
+        margin-bottom: -17rem;
+    }
+
+    .driver.white-paper-driver {
+        top: -8rem !important;
+        margin-bottom: -8rem !important;
+    }
+}
+
+@media (max-width: 1025px) {
+    .driver.white-paper-driver {
+        top: -5rem;
+        margin-bottom: 0rem;
+    }
+
+    .info-first-text {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .driver-section {
+        top: -3rem !important;
+        margin-bottom: -3rem !important;
+    }
+
+    .driver.white-paper-driver {
+        top: -1rem;
+        margin-bottom: 0rem;
+    }
+
+    .info-video {
+        top: -6rem;
+        margin-bottom: -6rem;
+        object-position: 44% 0;
+        min-height: 90vh;
+    }
+
+    .driver-section.info {
+        top: 0rem !important;
+        margin-bottom: -3rem !important;
+    }
+
+    .dash {
+        width: 12px;
+        height: 12px;
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo-brand {
+        width: 80px;
+        z-index: 99;
+    }
+
+    .nav-collaps {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: #ece403b8;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logos {
+        position: relative;
+        top: -5rem;
+        margin-bottom: -5rem;
+    }
+}
